@@ -1,0 +1,1304 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-24T09:21:20.877Z",
+        "line": 5,
+        "name": "Create Json Bin using POST API request and verify Response details",
+        "description": "",
+        "id": "validating-jsonbinversions;create-json-bin-using-post-api-request-and-verify-response-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 946134200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add header for API",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addHeaderAPI(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "header",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Master-Key",
+                  "$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Bin-Name",
+                  "Test Version"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Bin-Versioning",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Bin-Private",
+                  "false"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 353044700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I add param for Post request",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addParamPost(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "description",
+                  "Test JSON Bin"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1833613300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I calls \"createbin\" API with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createbin\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefs.stepDefinitionFile.callAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46000700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "validate the response details",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.validateResponseDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "status code",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "name",
+                  "Test Version"
+                ]
+              },
+              {
+                "cells": [
+                  "private",
+                  "false"
+                ]
+              },
+              {
+                "cells": [
+                  "description",
+                  "Test JSON Bin"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PostsAPI"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-24T09:21:24.134Z",
+        "line": 28,
+        "name": "Count Bin versions using Get Request and verify response details",
+        "description": "",
+        "id": "validating-jsonbinversions;count-bin-versions-using-get-request-and-verify-response-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17999300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I add header for API",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addHeaderAPI(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "header",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Master-Key",
+                  "$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 665131400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I calls \"countBinVersions\" API with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"countBinVersions\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefs.stepDefinitionFile.callAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17002800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "validate the response details",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.validateResponseDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "status code",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "versionCount",
+                  "0"
+                ]
+              },
+              {
+                "cells": [
+                  "private",
+                  "false"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPI"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-24T09:21:24.839Z",
+        "line": 45,
+        "name": "Update Json Bin using PUT request and verify response",
+        "description": "",
+        "id": "validating-jsonbinversions;update-json-bin-using-put-request-and-verify-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1999400,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I add header for API",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addHeaderAPI(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "header",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Master-Key",
+                  "$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Bin-Versioning",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Bin-Private",
+                  "false"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I add param for Post request",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addParamPost(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "description",
+                  "Test Updated Bin"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 667102500,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I calls \"updateBin\" API with \"Put\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updateBin\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Put\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefs.stepDefinitionFile.callAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9000600,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "validate the response details",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.validateResponseDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "status code",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "name",
+                  "Test Version"
+                ]
+              },
+              {
+                "cells": [
+                  "description",
+                  "Test Updated Bin"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PutAPI"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-24T09:21:25.520Z",
+        "line": 66,
+        "name": "Count Bin versions using Get Request and verify response details",
+        "description": "",
+        "id": "validating-jsonbinversions;count-bin-versions-using-get-request-and-verify-response-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2001400,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "I add header for API",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addHeaderAPI(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "header",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Master-Key",
+                  "$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 627001800,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I calls \"countBinVersions\" API with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"countBinVersions\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefs.stepDefinitionFile.callAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15006400,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "validate the response details",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.validateResponseDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "status code",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "versionCount",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "private",
+                  "false"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPI"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-24T09:21:26.168Z",
+        "line": 81,
+        "name": "Delete Json Bin Versions and verify Bin Versions deleted successfully",
+        "description": "",
+        "id": "validating-jsonbinversions;delete-json-bin-versions-and-verify-bin-versions-deleted-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1500400,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I add header for API",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addHeaderAPI(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "header",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Master-Key",
+                  "$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Bin-Name",
+                  "Test Bin"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 625601600,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "I calls \"deleteBinVersions\" API with \"Delete\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deleteBinVersions\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Delete\"",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefs.stepDefinitionFile.callAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15001400,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "validate the response details",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.validateResponseDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "status code",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "message",
+                  "Versions for the Bin are deleted successfully"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeleteAPI"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Validating JsonBinVersions",
+    "description": "",
+    "id": "validating-jsonbinversions",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/JsonBinVersion.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-24T09:21:26.813Z",
+        "line": 5,
+        "name": "Create Json Bin using POST API request and verify Response details",
+        "description": "",
+        "id": "validating-jsonplaceholder-api;create-json-bin-using-post-api-request-and-verify-response-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add header for API",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addHeaderAPI(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "header",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Master-Key",
+                  "$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Bin-Name",
+                  "Test Bin"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I add param for Post request",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addParamPost(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "description",
+                  "Test JSON Bin"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 663137400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I calls \"createbin\" API with \"Post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createbin\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Post\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefs.stepDefinitionFile.callAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25000500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "validate the response details",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.validateResponseDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "status code",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "name",
+                  "Test Bin"
+                ]
+              },
+              {
+                "cells": [
+                  "private",
+                  "true"
+                ]
+              },
+              {
+                "cells": [
+                  "description",
+                  "Test JSON Bin"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PostsAPI"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-24T09:21:27.514Z",
+        "line": 25,
+        "name": "Read Json Bin using Get Request and verify response details",
+        "description": "",
+        "id": "validating-jsonplaceholder-api;read-json-bin-using-get-request-and-verify-response-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1999000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I add header for API",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addHeaderAPI(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "header",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Master-Key",
+                  "$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Bin-Name",
+                  "Test Bin"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 638103600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I calls \"readBin\" API with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"readBin\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefs.stepDefinitionFile.callAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10001300,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "validate the response details",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.validateResponseDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "status code",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "name",
+                  "Test Bin"
+                ]
+              },
+              {
+                "cells": [
+                  "private",
+                  "true"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPI"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-24T09:21:28.166Z",
+        "line": 42,
+        "name": "Update Json Bin using PUT request and verify response",
+        "description": "",
+        "id": "validating-jsonplaceholder-api;update-json-bin-using-put-request-and-verify-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2509600,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I add header for API",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addHeaderAPI(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "header",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Master-Key",
+                  "$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Bin-Name",
+                  "Test Bin"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Bin-Versioning",
+                  "true"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I add param for Post request",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addParamPost(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "description",
+                  "Test Updated Bin"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 626902400,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I calls \"updateBin\" API with \"Put\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updateBin\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Put\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefs.stepDefinitionFile.callAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 499600,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "validate the response details",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.validateResponseDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "status code",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "name",
+                  "Test Bin"
+                ]
+              },
+              {
+                "cells": [
+                  "description",
+                  "Test Updated Bin"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PutAPI"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-24T09:21:28.800Z",
+        "line": 61,
+        "name": "Count Bin versions using Get Request and verify response details",
+        "description": "",
+        "id": "validating-jsonplaceholder-api;count-bin-versions-using-get-request-and-verify-response-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2002100,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "I add header for API",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addHeaderAPI(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "header",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Master-Key",
+                  "$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 613512800,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I calls \"countBinVersions\" API with \"Get\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"countBinVersions\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefs.stepDefinitionFile.callAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16000400,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "validate the response details",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.validateResponseDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "status code",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "versionCount",
+                  "0"
+                ]
+              },
+              {
+                "cells": [
+                  "private",
+                  "true"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetAPI"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-24T09:21:29.434Z",
+        "line": 77,
+        "name": "Delete Json Bin and verify Bin deleted successfully",
+        "description": "",
+        "id": "validating-jsonplaceholder-api;delete-json-bin-and-verify-bin-deleted-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1497900,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I add header for API",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.addHeaderAPI(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "header",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Master-Key",
+                  "$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2"
+                ]
+              },
+              {
+                "cells": [
+                  "X-Bin-Name",
+                  "Test Bin"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 629386500,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I calls \"deleteBin\" API with \"Delete\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deleteBin\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"Delete\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefs.stepDefinitionFile.callAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16509600,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "validate the response details",
+            "match": {
+              "location": "stepdefs.stepDefinitionFile.validateResponseDetails(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "param",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "status code",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "message",
+                  "Bin deleted successfully"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DeleteAPI"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Jsonplaceholder API",
+    "description": "",
+    "id": "validating-jsonplaceholder-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/Jsonplaceholder.feature",
+    "tags": []
+  }
+]

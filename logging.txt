@@ -1,0 +1,158 @@
+Request method:	POST
+Request URI:	https://api.jsonbin.io/v3/b/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Master-Key=$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2
+				X-Bin-Name=Test Version
+				X-Bin-Versioning=true
+				X-Bin-Private=false
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[{"description":"Test JSON Bin"}]
+HTTP/1.1 400 Bad Request
+Date: Sun, 25 Apr 2021 11:31:44 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 67
+Connection: keep-alive
+Set-Cookie: __cfduid=daaa4a8c4f62e33a7ca7e639819f6fdd21619350304; expires=Tue, 25-May-21 11:31:44 GMT; path=/; domain=.jsonbin.io; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"43-JDU8ywPGAlaAKa2G4u/XdE40KC0"
+CF-Cache-Status: DYNAMIC
+cf-request-id: 09aa65ce060000fa306591e000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=%2B6GI0z09rk2lI7q7BHxVnlYVNbgo9Q%2B%2FVRrhnhSo8ENU7M%2BlOKlTAd7YwntYup3qAmcoGAsBeEJ7%2F6haXwHxUGqR93qEdTxuZb6pYKxXqw%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 64573f29af4ffa30-AMS
+alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "message": "You need to pass Content-Type set to application/json"
+}
+Request method:	POST
+Request URI:	https://api.jsonbin.io/v3/b/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Bin-Name=Test Version
+				X-Bin-Versioning=true
+				X-Bin-Private=false
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    {
+        "description": "Test JSON Bin"
+    }
+]
+HTTP/1.1 401 Unauthorized
+Date: Sun, 25 Apr 2021 11:31:45 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 57
+Connection: keep-alive
+Set-Cookie: __cfduid=d820c2935e4047e924a58d126bd861b6f1619350305; expires=Tue, 25-May-21 11:31:45 GMT; path=/; domain=.jsonbin.io; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"39-Iw9gmWXxUMZ/lwBWpTbrb9Xe1cY"
+CF-Cache-Status: DYNAMIC
+cf-request-id: 09aa65d28500001ec299233000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=2jBNGsBNJe6JL14tTycAHqYVugidugyt3RRJZO2Z6GIKpHeFXDqkAvH%2FTA63NyRgyFQNBNnynkYlzKGYQG9q4atDhpCb2ZtwDqakqCOFnw%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"max_age":604800,"report_to":"cf-nel"}
+Server: cloudflare
+CF-RAY: 64573f30dcc31ec2-AMS
+alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "message": "You need to pass X-Master-Key in the header"
+}
+Request method:	POST
+Request URI:	https://api.jsonbin.io/v3/b/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Master-Key=$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2
+				X-Bin-Versioning=true
+				X-Bin-Private=false
+				X-Bin-Name=Test Version
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Sun, 25 Apr 2021 11:31:46 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 33
+Connection: keep-alive
+Set-Cookie: __cfduid=d288a6a0336f08b691b0ead37bdf47c351619350306; expires=Tue, 25-May-21 11:31:46 GMT; path=/; domain=.jsonbin.io; HttpOnly; SameSite=Lax; Secure
+x-powered-by: Express
+access-control-allow-origin: *
+etag: W/"21-Wxx0DQJx+/HoU/nzLij8or+1YGM"
+CF-Cache-Status: DYNAMIC
+cf-request-id: 09aa65d52f0000fa6c768a2000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=GnERuZj9X3CJX4UVofra0%2BLk1ekYVxopocQbabZv23QxnUkuGr2XBC%2FG6LrgoIVUS9agJjA6uuV6N8npIWctVAo9Zky2bB5KgEhqV7lXxQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 64573f351d2cfa6c-AMS
+alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "message": "Bin cannot be blank"
+}
+Request method:	POST
+Request URI:	https://api.jsonbin.io/v3/b/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		X-Master-Key=$2b$10$vQPikd1lKLRr90.C.PWlO.pBZkUcwjTLfRBVFwxSdvi27lmcolRa2
+				X-Bin-Name=Test Bin Name with More than allowed size providing to test error code with this scenario  Test Bin Name with More than allowed size providing
+				X-Bin-Versioning=true
+				X-Bin-Private=false
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+[
+    {
+        "description": "Test JSON Bin"
+    }
+]
+HTTP/1.1 400 Bad Request
+Date: Sun, 25 Apr 2021 11:31:47 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 63
+Connection: keep-alive
+Set-Cookie: __cfduid=d4d12bfb3320a483e17f81c74b1174b351619350306; expires=Tue, 25-May-21 11:31:46 GMT; path=/; domain=.jsonbin.io; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"3f-JYxmp1vcZEdBAiwQJORbRjdQjmI"
+CF-Cache-Status: DYNAMIC
+cf-request-id: 09aa65d7c10000c82fc9bd4000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=h86RW8KjPWRNIQvO26s0%2FG09WMS6ZwlWp3EC42%2FhCB2wStoOsscRrMy9E4R4Wtj8AxMlOVda5JX9UJY%2BrlDc5euktd1pk%2FxZKnOdc3Se6w%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 64573f393cbac82f-AMS
+alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "message": "X-Bin-Name cannot be blank or over 128 characters"
+}
